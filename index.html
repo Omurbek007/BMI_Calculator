@@ -13,15 +13,21 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-10 wrapper d-flex flex-column m-auto justify-content-center align-items-center">
-                <img class="w-60 mb-5" src="img/th.webp" alt="BMI-img">
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="inputGroup-sizing-sm">Weight.</span>
-                    <input class="form-control weight" type="number">
-                    <span class="input-group-text" id="inputGroup-sizing-sm">Height.</span>
-                    <input class="form-control height" type="number">
-                </div>
+        <div class="row m-auto">
+            <div class="col-lg-10 col-xs-2 p-sm-5 p-md-3 col-md-12 col-sm-11 wrapper d-flex flex-column justify-content-center align-items-center">
+                <img class="mb-5" src="img/th.webp" alt="BMI-img">
+                <div class="input-group row mb-3">
+                    <div class="input-group-prepend p-1 input-group-lg col-lg-6">
+                      <span class="input-group-text" id="basic-addon1">Type weight</span>
+                      <input type="text" class="weight form-control mb-3" placeholder="0" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    
+                    <div class="input-group-prepend p-1 input-group-lg col-lg-6">
+                        <span class="input-group-text" id="basic-addon1">Type height</span> 
+                        <input type="text" class="height form-control mb-3" placeholder="0" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                     
+                  </div>
                 
                 <button class="btn btn-lg btn-outline-danger mt-3" onclick="bmi()">Click to learn your BMI</button>
                 <h2 class="result">0</h2>

@@ -4,7 +4,11 @@ body {
 }
 
 .wrapper {
-    padding: 3rem 7rem;
+    margin: 2rem auto;
+}
+
+img {
+    width: 100%;
 }
 .result {
     padding: 2rem 12rem 2rem 12rem;
@@ -17,4 +21,16 @@ p {
 
 strong {
     color: rgb(198, 20, 20);
+}
+
+@media  (max-width: 500px) {
+    input {
+        display: block;
+        
+    }
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
 }
